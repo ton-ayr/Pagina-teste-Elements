@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements Teste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+            background-color: #1e1e1e;
+        }
+        h1 {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Oferta Espacial</h1>
+        <div id="elements"></div>
+    </div>
+
+    <script src="https://cdn.eduzzcdn.com/sun/bridge/bridge.js" async type="module"></script>
+    <script>
+        (function () {
+          const load = function () {
+              window.Eduzz.Checkout.init({
+                contentId: "KW83QPOB01",
+                target: "elements",
+                errorCover: false
+              });
+          }
+          if (document.readyState === 'complete') {
+              load();
+              return;
+          }
+          window.addEventListener('load', load);
+        })();
+    </script>
+</body>
+</html>
