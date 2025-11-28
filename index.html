@@ -29,17 +29,15 @@
 <body>
     <div class="container">
         <h1>Oferta Espacial</h1>
-        <div id="elements"></div>
-    </div>
-
-    <script src="https://cdn.eduzzcdn.com/sun/bridge/bridge.js" async type="module"></script>
-    <script>
+      <div id="elements"></div>
+      <script src="https://cdn.eduzzcdn.com/sun/bridge/bridge.js" async type="module"></script>
+      <script>
         (function () {
           const load = function () {
               window.Eduzz.Checkout.init({
                 contentId: "E9OO8ZXV9B",
                 target: "elements",
-                errorCover: false
+                errorCover: true
               });
           }
           if (document.readyState === 'complete') {
@@ -48,7 +46,7 @@
           }
           window.addEventListener('load', load);
         })();
-    </script>
+      </script>
 <script>
     (function(i,s,o,g,c,f,r,a,m)
     {i['edzpx_c']=c;i['edzpx_a']=f;i['PxEdz']=r;i[r]=i[r]||
